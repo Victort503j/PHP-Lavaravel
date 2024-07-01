@@ -58,9 +58,9 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Docentes Grupos
                         </a>
-                        <a class="nav-link" href="{{route('docentes_grupos.index')}}">
+                        <a class="nav-link" href="{{route('estudiantes.index')}}">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                            Estudiante
+                            Estudiantes
                         </a>
                         @endif
                     </div>
