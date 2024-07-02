@@ -23,8 +23,8 @@
     <br>
     <div class="row">
         <div class"col-md-12">
-            <button type="submit" class="btn btn-primary">Modificar</button>
-            <a href="{{ route('docentes.index') }}" class="btn btn-secondary">Cancelar</a>
+            <button type="submit" class="btn btn-primary mt-1">Modificar</button>
+            <a href="{{ route('docentes.index') }}" class="btn btn-secondary mt-1">Cancelar</a>
         </div>
     </div>
 </form>

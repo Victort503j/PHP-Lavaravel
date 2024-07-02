@@ -45,7 +45,7 @@ class DocenteController extends Controller
     {
         $request->merge(['password' => Hash::make($request->password)]);
         $docente = Docente::create($request->all());
-        return redirect()->route('docentes.index')->with('message', 'Docente creado correctamente');
+        return redirect()->route('docentes.index')->with('success', 'Docente creado correctamente');
     }
 
     /**
@@ -92,7 +92,7 @@ class DocenteController extends Controller
 
         $docente->save();
 
-        return redirect()->route('docentes.index')->with('message', 'Docente actualizado correctamente');
+        return redirect()->route('docentes.index')->with('success', 'Docente actualizado correctamente');
     }
 
     public function delete($id)
@@ -118,7 +118,7 @@ class DocenteController extends Controller
 
         $docente->delete();
 
-        return redirect()->route('docentes.index')->with('message', 'Docente eliminado correctamente');
+        return redirect()->route('docentes.index')->with('success', 'Docente eliminado correctamente');
     }
 
     public function showLoginForm()
